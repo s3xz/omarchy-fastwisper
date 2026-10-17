@@ -70,7 +70,7 @@ To keep the files but hide the widget, use `omarchy plugin disable io.github.s3x
 
 ## What it runs
 
-The widget is QML only. It never uses sudo, downloads nothing, stores nothing and doesn't edit your configuration. These are the only commands it starts, always as your user and without a shell:
+The widget is QML only and runs entirely as your user, without root privileges. It downloads nothing, stores nothing and doesn't edit your configuration. These are the only commands it starts, never through a shell:
 
 | Command | When |
 | --- | --- |
