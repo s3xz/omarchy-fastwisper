@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.s3xz.fastwisper",
+  "name": "FastWisper",
+  "version": "1.0.0",
+  "author": "s3xz",
+  "license": "MIT",
+  "description": "Bar status for FastWisper, local offline voice dictation for Omarchy: shows idle, recording, transcribing and error states. Click toggles hands-free dictation, right-click opens the FastWisper hub. Requires the FastWisper app.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "FastWisper.qml" },
+  "barWidget": {
+    "displayName": "FastWisper",
+    "description": "Local voice dictation status",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "cliPath": ""
+    },
+    "schema": [
+      {
+        "key": "cliPath",
+        "type": "string",
+        "label": "FastWisper CLI path",
+        "description": "Absolute path to the fastwisper command. Leave empty to use fastwisper from PATH, then ~/.local/bin/fastwisper.",
+        "defaultValue": ""
+      }
+    ]
+  },
+  "homepage": "https://github.com/s3xz/omarchy-fastwisper",
+  "repository": "https://github.com/s3xz/omarchy-fastwisper"
+}
